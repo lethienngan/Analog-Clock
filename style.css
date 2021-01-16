@@ -1,0 +1,155 @@
+* {
+  padding   : 0;
+  margin    : 0;
+  box-sizing: border-box;
+}
+
+body {
+  width           : 100vw;
+  height          : 100vh;
+  overflow        : hidden;
+  display         : flex;
+  justify-content : center;
+  align-items     : center;
+  background-color: #4158D0;
+  background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+}
+
+.clock {
+  position        : relative;
+  width           : 500px;
+  height          : 500px;
+  border: 6px solid rgba(53, 59, 72, 1);
+  border-radius   : 50%;
+  background-color: #FFDEE9;
+  background-image: linear-gradient(0deg, #FFDEE9 0%, #B5FFFC 100%);
+  box-shadow: 0px 0px 40px 0px rgba(0,0,0,0.75);
+}
+.clock::before{
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background-color: rgba(53, 59, 72, 1);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+.num{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  color: rgba(53, 59, 72, 1);
+  padding: 20px;
+}
+.num::after{
+  content: "";
+  position: absolute;
+  background-color: rgba(53, 59, 72, 1);
+  height: 15px;
+  width: 3px;
+  top: 0;
+  transform: translateX(-50%);
+  /* border-radius: 25a%; */
+}
+.num1{
+  transform: rotate(30deg);
+}
+.num1 > p {
+  transform: rotate(-30deg);
+}
+.num2{
+  transform: rotate(60deg);
+}
+.num2 > p {
+  transform: rotate(-60deg);
+}
+.num3{
+  transform: rotate(90deg);
+}
+.num3 > p{
+  transform: rotate(-90deg);
+}
+.num4{
+  transform: rotate(120deg);
+}
+.num4 > p{
+  transform: rotate(-120deg);
+}
+.num5{
+  transform: rotate(150deg);
+}
+.num5 > p{
+  transform: rotate(-150deg);
+}
+.num6{
+  transform: rotate(180deg);
+}
+.num6 > p{
+  transform: rotate(-180deg);
+}
+.num7{
+  transform: rotate(210deg);
+}
+.num7 > p{
+  transform: rotate(-210deg);
+}
+.num8{
+  transform: rotate(240deg);
+}
+.num8 > p{
+  transform: rotate(-240deg);
+}
+.num9{
+  transform: rotate(270deg);
+}
+.num9 > p{
+  transform: rotate(-270deg);
+}
+.num10{
+  transform: rotate(300deg);
+}
+.num10 > p{
+  transform: rotate(-300deg);
+}
+.num11{
+  transform: rotate(330deg);
+}
+.num11 > p{
+  transform: rotate(-330deg);
+}
+.hand{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.hand div{
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(53, 59, 72, 1);
+}
+.sec{
+  width: 3px;
+  height: 45%;
+  background-color: red !important;
+}
+.min{
+  width: 3px;
+  height: 38%;
+  border-radius: 5px;
+}
+.hour{
+  width: 10px;
+  height: 30%;
+  border-radius: 5px;
+}

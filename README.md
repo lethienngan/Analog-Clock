@@ -1,6 +1,4 @@
-# Javascript
-Analog Clock
-
+# Analog Clock
 Using HTML5/CSS3/JS-ES6
 
 **JS function:**
